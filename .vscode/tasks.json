@@ -1,42 +1,19 @@
 {
     "version": "2.0.0",
     "tasks": [
-      {
-        "label": "Atualizar GitHub (Windows)",
-        "type": "shell",
-        "command": "${workspaceFolder}/update.bat",
-        "windows": {
-          "command": "${workspaceFolder}/update.bat"
-        },
-        "problemMatcher": [],
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "presentation": {
-          "reveal": "always",
-          "panel": "new"
+        {
+            "label": "Atualizar GitHub",
+            "type": "shell",
+            "command": "${workspaceFolder}/update.bat",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
         }
-      },
-      {
-        "label": "Atualizar GitHub (Linux/Mac)",
-        "type": "shell",
-        "command": "${workspaceFolder}/update.sh",
-        "linux": {
-          "command": "${workspaceFolder}/update.sh"
-        },
-        "osx": {
-          "command": "${workspaceFolder}/update.sh"
-        },
-        "problemMatcher": [],
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "presentation": {
-          "reveal": "always",
-          "panel": "new"
-        }
-      }
     ]
 }
