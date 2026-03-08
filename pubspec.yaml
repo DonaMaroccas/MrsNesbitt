@@ -1,0 +1,26 @@
+name: reposicao_app
+description: Lista de reposição com lojas, tópicos e itens
+publish_to: 'none' # evita publicação acidental
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  excel: ^4.0.6
+  file_picker: ^10.3.8
+  flutter:
+    sdk: flutter
+
+  # Pacotes adicionais
+  path_provider: ^2.1.5
+  share_plus: ^12.0.1
+  shared_preferences: ^2.5.4
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
